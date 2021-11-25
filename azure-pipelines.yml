@@ -18,6 +18,6 @@ steps:
 - script: |
     pip install pytest pytest-azurepipelines
     pip install pytest-cov
-    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml
+    pytest --doctest-modules --junitxml=junit/test-results.xml --cov=. --cov-report=xml test_test1.py
   displayName: 'pytest'
 
